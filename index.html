@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <!DOCTYPE html>
+  <html lang=en>
+      <head>
+          <title>A-Frame scene</title>
+          <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+        <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+      </head>
+      <body>
+          <a-scene>
+            <a-entity                   position="0 0 -10"
+>
+            <a-entity 
+                  ply-model="src:Street.ply"
+                  position="0 3 -1"
+                  rotation="-90 0 0"
+            ></a-entity>
+            <a-sky color="lightblue"></a-sky>
+            <a-torus-knot
+                position="11 15 -20"
+                p="4" 
+                q="5" 
+                radius="3" 
+                radius-tubular="0.35"
+                rotation="90, 0, 0"
+              animation="
+                property: position;
+                from: -0.295 15.000 -10.780;
+                to: -0.295 15.000 4.843;
+              dur: 8000;
+              loop: true;
+              easing: linear;"
+            ></a-torus-knot>
+            <a-entity 
+              ply-model="src:REDBUS.ply"
+              position="0 2 -1"
+              rotation="-90 0 0"
+              animation="
+                property: position;
+                from: 0.280 -0.758 -12;
+                to: 0.280 -0.758 -5.3;
+              dur: 5000;
+              loop: true;
+              easing: linear;"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:Pinkbus.ply"
+              position="6 -0.148 -12"
+              rotation="-90 0 0"
+               animation="
+                property: position;
+                from: 6 -0.148 -12;
+                to: 6 -0.148 -5.3;
+              dur: 4000;
+              loop: true;
+              easing: linear;"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:StopSign.ply"
+              position="-0.6 0.257 -3.15"
+              rotation="0 0 0"
+              scale="0.15 0.15 0.15"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:StopSign1.ply"
+              position="1.445 0.257 -4.126"
+              rotation="0 0 0"
+              scale="0.15 0.15 0.15"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:Redcar.ply"
+              position="0 2 -1"
+              rotation="-90 0 0"
+              animation="
+                property: position;
+                from: 3.891 -0.413 -11.100;
+                to: 3.891 -0.413 -2.817;
+              dur: 5000;
+              loop: true;
+              easing: linear;"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:Bird.ply"
+              position="0 11 -12.749"
+              rotation=" 0 0"
+              scale="0.4 0.4 0.4"
+              animation="
+              property: position;
+              from: 0 11 -12.749;
+              to: 0 11 2.436;
+              dur: 5000;
+              loop: true;
+              easing: linear;"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:Boy.ply"
+              position="1.5 0.588 -5.6"
+              rotation="-90 0 0"
+              scale="0.5 0.5 0.5"
+              animation__first="
+              property: position;
+              from: 4.503 0.115 -5.429;
+              to: 4.503 0.115 3.279;
+              dur: 5000;
+              dir:alternate;
+              easing: linear;
+              startEvents: loaded, animationcomplete__fourth"
+              animation__second="
+              property: rotation;
+              from: -90 0 0;
+              to: -90 -180 0;
+              startEvents: animationcomplete__first"
+              animation__third="
+              property: position;
+              from: 4.503 0.115 3.279;
+              to: 4.503 0.115 -5.429;
+              dur: 5000;
+              startEvents: animationcomplete__second"
+              animation__fourth="
+              property: rotation;
+              from: -90 -180 0;
+              to: -90 0 0;
+              startEvents: animationcomplete__third"
+            ></a-entity>
+            <a-entity 
+              ply-model="src:Smallboy.ply"
+              position="-4.556 0.115 -5.429"
+              rotation="-90 0 0"
+              scale="0.5 0.5 0.5"
+              animation="
+              property: position;
+              from: -4.556 0.115 -5.429;
+              to: -4.556 0.115 3.279;
+              dur: 6000;
+              loop: true;
+              easing: linear;"
+            ></a-entity>
+              </a-entity>
+          </a-scene>
+      </body>
+  </html>
